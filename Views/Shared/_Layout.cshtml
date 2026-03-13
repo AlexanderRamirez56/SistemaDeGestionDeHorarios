@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SistemaDeHorarios</title>
+
+    ```
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SistemaDeHorarios.styles.css" asp-append-version="true" />
+    ```
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+            <div class="container-fluid">
+
+                <a class="navbar-brand fw-bold" asp-controller="Home" asp-action="Index">
+                    Sistema de Gestión de Horarios
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+
+                    <ul class="navbar-nav me-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Docentes" asp-action="Index">Docentes</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Asignaturas" asp-action="Index">Asignaturas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Aulas" asp-action="Index">Aulas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Grupos" asp-action="Index">Grupos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Horarios" asp-action="Index">Horarios</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-4">
+
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+
+    </div>
+
+    <footer class="border-top footer text-muted mt-4">
+        <div class="container text-center">
+            <p>
+                Sistema de Gestión de Horarios - 2026
+            </p>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

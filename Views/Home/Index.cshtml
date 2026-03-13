@@ -1,0 +1,114 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="text-center mb-5">
+
+    ```
+    <h1 class="display-4 fw-bold">Sistema de Gestión de Horarios</h1>
+
+    <p class="lead">
+        Plataforma para administrar docentes, asignaturas, aulas,
+        grupos y la programación de horarios académicos.
+    </p>
+    ```
+
+</div>
+
+<div class="row text-center">
+
+    <div class="col-md-4 mb-4">
+        <div class="card shadow">
+            <div class="card-body">
+
+                <h4 class="card-title">Docentes</h4>
+
+                <p class="card-text">
+                    Administrar los profesores del centro educativo.
+                </p>
+
+                <a asp-controller="Docentes" asp-action="Index" class="btn btn-primary">
+                    Ir a Docentes
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card shadow">
+            <div class="card-body">
+
+                <h4 class="card-title">Asignaturas</h4>
+
+                <p class="card-text">
+                    Gestionar las materias impartidas.
+                </p>
+
+                <a asp-controller="Asignaturas" asp-action="Index" class="btn btn-success">
+                    Ir a Asignaturas
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card shadow">
+            <div class="card-body">
+
+                <h4 class="card-title">Aulas</h4>
+
+                <p class="card-text">
+                    Administrar las aulas disponibles.
+                </p>
+
+                <a asp-controller="Aulas" asp-action="Index" class="btn btn-warning">
+                    Ir a Aulas
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row text-center">
+
+    <div class="col-md-6 mb-4">
+        <div class="card shadow">
+            <div class="card-body">
+
+                <h4 class="card-title">Grupos</h4>
+
+                <p class="card-text">
+                    Gestionar los grupos de estudiantes.
+                </p>
+
+                <a asp-controller="Grupos" asp-action="Index" class="btn btn-info">
+                    Ir a Grupos
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+        <div class="card shadow">
+            <div class="card-body">
+
+                <h4 class="card-title">Horarios</h4>
+
+                <p class="card-text">
+                    Crear y administrar los horarios de clases.
+                </p>
+
+                <a asp-controller="Horarios" asp-action="Index" class="btn btn-danger">
+                    Ir a Horarios
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+</div>
