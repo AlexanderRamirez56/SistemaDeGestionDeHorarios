@@ -1,44 +1,75 @@
-# Sistema de Facturación
+# 🧾 Sistema de Facturación
 
-Aplicación web de facturación desarrollada con ASP.NET Core MVC para gestionar
-clientes, productos, facturas y detalles de facturación.
+Sistema web de facturación desarrollado con **ASP.NET Core MVC y .NET 8**.
 
-## Tecnologías utilizadas
+El proyecto permite administrar clientes y productos, además de crear facturas
+seleccionando un cliente, los productos y las cantidades correspondientes.
+
+## 🚀 Tecnologías utilizadas
 
 - C#
+- .NET 8
 - ASP.NET Core MVC
 - Entity Framework Core
 - SQL Server
 - HTML
 - CSS
-- Bootstrap
+- Razor Views
 
-## Funcionalidades
+## ⚙️ Funcionalidades
 
-- Gestión de clientes
+### 👥 Clientes
+- Registrar clientes
+- Consultar clientes
+- Editar información
+- Eliminar clientes
+- Ver detalles de un cliente
+
+### 📦 Productos
 - Gestión de productos
-- Creación de facturas
-- Registro de detalles de factura
-- Persistencia de datos con Entity Framework Core
-- Uso de migraciones
-- Arquitectura MVC
+- Registro y modificación de productos
+- Eliminación de productos
 
-## Estructura del proyecto
+### 🧾 Facturación
+- Crear facturas
+- Seleccionar cliente
+- Agregar productos a una factura
+- Especificar cantidades
+- Generar detalles de factura
+- Consultar facturas registradas
 
-El proyecto está organizado utilizando el patrón MVC:
+## 🏗️ Arquitectura
 
-- Controllers: lógica de control de las solicitudes
-- Models: modelos y entidades del sistema
-- Views: interfaz de usuario
-- Data: configuración de acceso a datos
-- Servicios: lógica de servicios de la aplicación
+El proyecto utiliza el patrón **MVC (Model-View-Controller)**.
 
-## Objetivo del proyecto
+- `Models` → entidades y modelos del sistema
+- `Views` → interfaz de usuario
+- `Controllers` → manejo de solicitudes y operaciones
+- `Data` → acceso y configuración de datos
+- `Servicios` → lógica relacionada con la facturación
+- `Migrations` → migraciones de Entity Framework Core
 
-Este proyecto fue desarrollado para practicar el desarrollo de aplicaciones web
-con ASP.NET Core, el patrón MVC, bases de datos relacionales y Entity Framework Core.
+## 🎯 Objetivo
 
-## Autor
+Este proyecto fue desarrollado como parte de mi aprendizaje en desarrollo
+de software para poner en práctica conceptos de C#, ASP.NET Core MVC,
+bases de datos relacionales, Entity Framework Core y arquitectura MVC.
 
-Alexander Ramírez
+## 📚 Aprendizajes
+
+Durante el desarrollo de este proyecto he trabajado con:
+
+- Programación orientada a objetos
+- Patrón MVC
+- Operaciones CRUD
+- Bases de datos relacionales
+- Entity Framework Core
+- Inyección de dependencias
+- Programación asíncrona con async/await
+- Separación de responsabilidades
+
+## 👨‍💻 Autor
+
+**Alexander Ramírez Jiménez**
+
 Estudiante de Ingeniería en Software
